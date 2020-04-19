@@ -2,7 +2,7 @@
     "name": "jonataneriksson/vuekit",
     "description": "Kirby Plainkit with Vue",
     "type": "project",
-    "keywords": ["kirby", "cms", "starterkit", vue],
+    "keywords": ["kirby", "cms", "starterkit", "vue"],
     "homepage": "https://tsto.org",
     "authors": [
         {
