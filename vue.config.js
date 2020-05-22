@@ -1,7 +1,7 @@
 module.exports = {
   //Different assets location for production mode
-  assetsDir: '../assets/dist/',
-  indexPath: '../site/templates/default.php',
+  assetsDir: './assets/dist/',
+  indexPath: './site/templates/default.php',
 
   //Developement server
   devServer: {
