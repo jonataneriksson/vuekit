@@ -1,15 +1,15 @@
 module.exports = {
   //Different assets location for production mode
-  assetsDir: 'assets/dist/',
+  assetsDir: '../assets/dist/',
   indexPath: '../site/templates/default.php',
 
   //Developement server
-  /* devServer: {
+  devServer: {
     host: process.env.VUEHOST,
     port: 8080,
     https: false,
     proxy: process.env.LOCALPROXY
-  },*/
+  },
 
   //Sourcemaps
   css: { sourceMap: true },
@@ -24,7 +24,7 @@ module.exports = {
       }
     });
     config.entryPoints.delete('app');
-    config.entry('app').add('./assets/src/main.js').end();
+    config.entry('app').add('./assets/entry.js').end();
     config.plugin('html').tap(args => {
       args[0].template =
         process.env.NODE_ENV === 'production'

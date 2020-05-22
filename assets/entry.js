@@ -16,6 +16,9 @@ import marked from 'marked/lib/marked';
 import VueScrollTo from 'vue-scrollto';
 Vue.use(VueScrollTo);
 
+/* Root Component */
+import App from './vues/root.vue';
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* !Store*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -63,11 +66,8 @@ const store = new Vuex.Store({
   }
 });
 
-/* Components */
-import App from './app.vue';
-
 /* Router */
-import Home from '../vues/home.vue';
+import Home from './vues/home.vue';
 
 Vue.use(VueRouter);
 
