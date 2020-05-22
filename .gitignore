@@ -48,3 +48,7 @@ content/*
 #Environment files
 # ---------------
 .env
+
+#Node Modules
+# ---------------
+node_modules/*

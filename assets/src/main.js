@@ -65,23 +65,9 @@ const store = new Vuex.Store({
 
 /* Components */
 import App from './app.vue';
-import Grid from '../../assets/vues/grid.vue';
-import Feature from '../../assets/vues/feature.vue';
-import Topnavigation from '../../assets/vues/top-navigation.vue';
-import Bottomfooter from '../../assets/vues/bottom-footer.vue';
-import Picturemodule from '../../assets/vues/picture-module.vue';
-import Installationmodule from '../../assets/vues/installation-module.vue';
-import Stylesheets from '../../assets/vues/styles.vue';
-Vue.component('grid', Grid);
-Vue.component('feature', Feature);
-Vue.component('top-navigation', Topnavigation);
-Vue.component('bottom-footer', Bottomfooter);
-Vue.component('picture-module', Picturemodule);
-Vue.component('installation-module', Installationmodule);
-Vue.component('stylesheets', Stylesheets);
 
 /* Router */
-import Home from '../../assets/vues/home.vue';
+import Home from '../vues/home.vue';
 
 Vue.use(VueRouter);
 
@@ -94,29 +80,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: () => import('../../assets/vues/about.vue')
-  },
-  {
-    path: '/paintings',
-    name: 'Paintings',
-    component: () => import('../../assets/vues/paintings.vue'),
-    children: [
-      {
-        path: ':painting',
-        name: 'Painting',
-        component: () => import('../../assets/vues/painting.vue')
-      }
-    ]
-  },
-  {
-    path: '/:collection',
-    name: 'Collection',
-    component: () => import('../../assets/vues/collection.vue')
-  },
-  {
-    path: '/:collection/:installation',
-    name: 'Installation',
-    component: () => import('../../assets/vues/installation.vue')
+    //component: () => import('../../assets/vues/about.vue')
   }
 ];
 

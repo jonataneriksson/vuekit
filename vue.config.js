@@ -1,17 +1,15 @@
 module.exports = {
   //Different assets location for production mode
-  outputDir: '../site/templates',
-  assetsDir:
-    process.env.NODE_ENV === 'production' ? '../../assets/dist/' : './dist/',
-  indexPath: 'default.php',
+  assetsDir: 'assets/dist/',
+  indexPath: '../site/templates/default.php',
 
   //Developement server
-  devServer: {
+  /* devServer: {
     host: process.env.VUEHOST,
     port: 8080,
     https: false,
     proxy: process.env.LOCALPROXY
-  },
+  },*/
 
   //Sourcemaps
   css: { sourceMap: true },
@@ -25,11 +23,13 @@ module.exports = {
         maxSize: 250000,
       }
     });
+    config.entryPoints.delete('app');
+    config.entry('app').add('./assets/src/main.js').end();
     config.plugin('html').tap(args => {
       args[0].template =
         process.env.NODE_ENV === 'production'
-          ? './public/default.php'
-          : './public/index.html';
+          ? './assets/public/default.php'
+          : './assets/public/index.html';
       args[0].processenv = process.env;
       return args;
     });

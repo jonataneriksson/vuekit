@@ -18,7 +18,8 @@
     },
     "require": {
         "php": ">=7.1.0",
-        "getkirby/cms": "^3.0"
+        "getkirby/cms": "^3.0",
+        "pedroborges/kirby-meta-tags": ">=0.0.1"
     },
     "config": {
         "optimize-autoloader": true
