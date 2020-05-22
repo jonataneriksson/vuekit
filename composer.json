@@ -16,10 +16,17 @@
         "issues": "https://github.com/jonataneriksson/vuekit/issues",
         "source": "https://github.com/jonataneriksson/vuekit/"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/jonataneriksson/kirby-json"
+        }
+    ],
     "require": {
         "php": ">=7.1.0",
         "getkirby/cms": "^3.0",
-        "pedroborges/kirby-meta-tags": ">=0.0.1"
+        "pedroborges/kirby-meta-tags": "*",
+        "jonataneriksson/kirby-json": "master@dev"
     },
     "config": {
         "optimize-autoloader": true

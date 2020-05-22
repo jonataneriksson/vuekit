@@ -11,6 +11,7 @@ class ComposerStaticInit4022c7b162fc64405040c731015bc367
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '04c6c5c2f7095ccf6c481d3e53e1776f' => __DIR__ . '/..' . '/mustangostang/spyc/Spyc.php',
         'f864ae44e8154e5ff6f4eec32f46d37f' => __DIR__ . '/../..' . '/kirby/config/setup.php',
+        'cd56e31fe6b953a8e6c7917943b90af0' => __DIR__ . '/../..' . '/site/plugins/meta-tags/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -29,6 +30,8 @@ class ComposerStaticInit4022c7b162fc64405040c731015bc367
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'PedroBorges\\MetaTags\\' => 21,
+            'PedroBorges\\KirbyMetaTags\\' => 26,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
         'L' => 
@@ -58,6 +61,14 @@ class ComposerStaticInit4022c7b162fc64405040c731015bc367
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'PedroBorges\\MetaTags\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pedroborges/meta-tags/src',
+        ),
+        'PedroBorges\\KirbyMetaTags\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/site/plugins/meta-tags/src',
         ),
         'PHPMailer\\PHPMailer\\' => 
         array (
@@ -323,6 +334,8 @@ class ComposerStaticInit4022c7b162fc64405040c731015bc367
         'PHPMailer\\PHPMailer\\SMTP' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/SMTP.php',
         'Parsedown' => __DIR__ . '/../..' . '/kirby/dependencies/parsedown/Parsedown.php',
         'ParsedownExtra' => __DIR__ . '/../..' . '/kirby/dependencies/parsedown-extra/ParsedownExtra.php',
+        'PedroBorges\\KirbyMetaTags\\MetaTags' => __DIR__ . '/../..' . '/site/plugins/meta-tags/src/MetaTags.php',
+        'PedroBorges\\MetaTags\\MetaTags' => __DIR__ . '/..' . '/pedroborges/meta-tags/src/MetaTags.php',
         'Psr\\Log\\AbstractLogger' => __DIR__ . '/..' . '/psr/log/Psr/Log/AbstractLogger.php',
         'Psr\\Log\\InvalidArgumentException' => __DIR__ . '/..' . '/psr/log/Psr/Log/InvalidArgumentException.php',
         'Psr\\Log\\LogLevel' => __DIR__ . '/..' . '/psr/log/Psr/Log/LogLevel.php',

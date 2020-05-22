@@ -229,6 +229,8 @@ return array(
     'PHPMailer\\PHPMailer\\SMTP' => $vendorDir . '/phpmailer/phpmailer/src/SMTP.php',
     'Parsedown' => $baseDir . '/kirby/dependencies/parsedown/Parsedown.php',
     'ParsedownExtra' => $baseDir . '/kirby/dependencies/parsedown-extra/ParsedownExtra.php',
+    'PedroBorges\\KirbyMetaTags\\MetaTags' => $baseDir . '/site/plugins/meta-tags/src/MetaTags.php',
+    'PedroBorges\\MetaTags\\MetaTags' => $vendorDir . '/pedroborges/meta-tags/src/MetaTags.php',
     'Psr\\Log\\AbstractLogger' => $vendorDir . '/psr/log/Psr/Log/AbstractLogger.php',
     'Psr\\Log\\InvalidArgumentException' => $vendorDir . '/psr/log/Psr/Log/InvalidArgumentException.php',
     'Psr\\Log\\LogLevel' => $vendorDir . '/psr/log/Psr/Log/LogLevel.php',
