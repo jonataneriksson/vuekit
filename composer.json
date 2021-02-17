@@ -27,7 +27,7 @@
         "php": ">=7.1.0",
         "getkirby/cms": "^3.0",
         "pedroborges/kirby-meta-tags": "*",
-        "jonataneriksson/kirby-json": "master@dev"
+        "jonataneriksson/kirby-json": "^1.2.0"
     },
     "config": {
         "optimize-autoloader": true
