@@ -2,6 +2,54 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
+## 2.7.0 - 2020-11-17
+
+### Added
+
+- [#10](https://github.com/laminas/laminas-escaper/pull/10) Adds Psalm as QA tool
+
+- [#9](https://github.com/laminas/laminas-escaper/pull/9) Adds PHP 8.0 support
+
+
+-----
+
+### Release Notes for [2.7.0](https://github.com/laminas/laminas-escaper/milestone/2)
+
+next feature release (minor)
+
+### 2.7.0
+
+- Total issues resolved: **0**
+- Total pull requests resolved: **2**
+- Total contributors: **2**
+
+#### Enhancement,hacktoberfest-accepted
+
+ - [10: Add Psalm integration](https://github.com/laminas/laminas-escaper/pull/10) thanks to @ocean
+ - [9: PHP 8.0 Support](https://github.com/laminas/laminas-escaper/pull/9) thanks to @Gounlaf
+
+## 2.6.1 - 2019-09-05
+
+### Added
+
+- [zendframework/zend-escaper#32](https://github.com/zendframework/zend-escaper/pull/32) adds support for PHP 7.3.
+
+### Changed
+
+- Nothing.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- Nothing.
+
 ## 2.6.0 - 2018-04-25
 
 ### Added

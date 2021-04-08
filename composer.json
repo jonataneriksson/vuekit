@@ -1,7 +1,7 @@
 {
     "name": "jonataneriksson/vuekit",
     "description": "Kirby Plainkit with Vue",
-    "version": "0.2.0",
+    "version": "0.2.3",
     "type": "project",
     "keywords": ["kirby", "cms", "starterkit", "vue"],
     "homepage": "https://tsto.org",
@@ -27,7 +27,7 @@
         "php": ">=7.1.0",
         "getkirby/cms": "^3.0",
         "pedroborges/kirby-meta-tags": "*",
-        "jonataneriksson/kirby-json": "master@dev"
+        "jonataneriksson/kirby-json": "^1.2.0"
     },
     "config": {
         "optimize-autoloader": true
