@@ -1,5 +1,0 @@
-#!/bin/sh
-sudo find . -exec chown :_www {} +
-sudo find . -type d -exec chmod 775 {} +
-sudo find . -type f -exec chmod 666 {} +
-sudo find sh -exec chmod 775 {} +
