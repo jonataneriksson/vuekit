@@ -1,7 +1,7 @@
 module.exports = {
   //Different assets location for production mode
-  assetsDir: './assets/dist/',
-  indexPath: './site/templates/default.php',
+  assetsDir: process.env.NODE_ENV === 'production' ? '../assets/dist/' : './assets/dist/',
+  indexPath: process.env.NODE_ENV === 'production' ? '../site/templates/default.php' : './site/templates/default.php',
 
   //Developement server
   devServer: {
@@ -16,15 +16,16 @@ module.exports = {
 
   //Webpack config
   chainWebpack: config => {
-    config.plugins.delete('prefetch');
     config.optimization.merge({
       splitChunks: {
         minSize: 10000,
         maxSize: 250000,
       }
     });
+    //config.plugins.delete('prefetch');
+    //config.output.crossOriginLoading('anonymous');
     config.entryPoints.delete('app');
-    config.entry('app').add('./assets/entry.js').end();
+    config.entry('app').add('./assets/root.js').end();
     config.plugin('html').tap(args => {
       args[0].template =
         process.env.NODE_ENV === 'production'

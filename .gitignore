@@ -52,3 +52,9 @@ content/*
 #Node Modules
 # ---------------
 node_modules/*
+
+#Fonts
+# ---------------
+assets/fonts/*
+
+*.otf
