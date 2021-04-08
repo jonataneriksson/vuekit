@@ -1,7 +1,7 @@
 {
   "name": "VueKit",
   "description": "Plain setup of Kirby CMS as backend and Vue CLI frontend with a custom JSON API.",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
