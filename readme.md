@@ -1,3 +1,7 @@
+# Installation
+
+git clone https://github.com/jonataneriksson/vuekit "project-name" --depth 0
+
 # Kirby Kit with Vue and a simple JSON API
 
 Home made Vue front for Kirby CMS with a JSON API as a plugin.
