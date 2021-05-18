@@ -1,0 +1,8 @@
+#!/bin/sh
+sudo xattr -w com.dropbox.ignored 1 media
+sudo xattr -w com.dropbox.ignored 1 .git
+sudo xattr -w com.dropbox.ignored 1 node_modules
+sudo xattr -w com.dropbox.ignored 1 site/cache
+sudo xattr -w com.dropbox.ignored 1 site/sessions
+sudo xattr -w com.dropbox.ignored 1 media/pages
+sudo xattr -w com.dropbox.ignored 1 media/panel

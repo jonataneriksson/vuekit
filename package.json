@@ -1,12 +1,13 @@
 {
   "name": "VueKit",
   "description": "Plain setup of Kirby CMS as backend and Vue CLI frontend with a custom JSON API.",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "license": "MIT",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint --ext .js,.vue --project assets/views/. --fix"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -14,14 +15,21 @@
     "marked": "^0.8.2",
     "vue": "^2.6.12",
     "vue-axios": "^2.1.5",
+    "vue-global-events": "^1.2.1",
     "vue-router": "^3.5.1",
     "vue-scrollto": "^2.20.0",
+    "vue-vimeo-player": "^0.2.2",
+    "vue2-touch-events": "^3.2.2",
     "vuex": "^3.6.2",
     "yaml-js": "^0.2.3"
   },
   "devDependencies": {
-    "@vue/cli-service": "^4.2.3",
-    "eslint-plugin-vue": "^6.2.2",
+    "@vue/cli-plugin-eslint": "^4.5.12",
+    "@vue/cli-service": "^3.12.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.9.0",
+    "node-sass": "^4.0.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.12"

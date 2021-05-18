@@ -1,5 +1,5 @@
 /* Router */
-import Landing from './views/landing.vue';
+const Landing = () => import(/* webpackChunkName: "Vues" */ './views/landing.vue')
 
 export default [
   {

@@ -22,7 +22,7 @@ export default new Vuex.Store({
         credentials: 'include',
         mode: 'no-cors',
         headers: {
-          'Accept': '*/*',
+          Accept: '*/*',
         }
       });
       http.get('json?path=' + path.substr(path.indexOf('/') + 1) +'&structure=1').then(response => {
@@ -45,25 +45,27 @@ export default new Vuex.Store({
         var page = false;
         var children = pages;
         while (paths.length) {
-          //console.log(paths);
           var id = paths.shift();
-          page = children[id];
-          if(page) children = typeof page.children === 'object' ? page.children : [];
+          page = (typeof children[id] === 'object') ? children[id] : false;
+          //console.log(paths, page.uri, page.children, page);
+          if(page) children = (typeof page.children === 'object') ? page.children : false;
         }
         //console.log(path, page, id, children, pages);
         if(page) {
           if(page.extended === true) {
             state.kirby.page = page;
           } else {
-            axios.get('json?path=' + page.uri ).then(response => {
+            //console.info('Loading ' + page.uri + ' from the API');
+            axios.get('json?path=' + page.uri +'&structure=0').then(response => {
               state.kirby.page = response.data.page;
+              state.kirby.page.children = page.children;
             });
           }
         } else {
-          console.error('No page!', path, state);
+          //console.log('No page!', path, state);
         }
       } else {
-        console.error('No pages!', path, state);
+        //console.error('No pages!', path, state);
       }
     }
   }
