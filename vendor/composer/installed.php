@@ -1,8 +1,8 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '0.2.3',
-    'version' => '0.2.3.0',
+    'pretty_version' => '0.2.7',
+    'version' => '0.2.7.0',
     'aliases' => 
     array (
     ),
@@ -13,30 +13,30 @@
   array (
     'claviska/simpleimage' => 
     array (
-      'pretty_version' => '3.5.1',
-      'version' => '3.5.1.0',
+      'pretty_version' => '3.6.3',
+      'version' => '3.6.3.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'ab2ab8a4672738ab77b39b00922ee4e79aeadb11',
+      'reference' => '21b6f4bf4ef1927158b3e29bd0c2d99c6681c750',
     ),
     'filp/whoops' => 
     array (
-      'pretty_version' => '2.9.1',
-      'version' => '2.9.1.0',
+      'pretty_version' => '2.12.1',
+      'version' => '2.12.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '307fb34a5ab697461ec4c9db865b20ff2fd40771',
+      'reference' => 'c13c0be93cff50f88bbd70827d993026821914dd',
     ),
     'getkirby/cms' => 
     array (
-      'pretty_version' => '3.5.3.1',
-      'version' => '3.5.3.1',
+      'pretty_version' => '3.5.5',
+      'version' => '3.5.5.0',
       'aliases' => 
       array (
       ),
-      'reference' => '38afb2d650f3764d23d732b23ae8f04ab9ffba69',
+      'reference' => 'efe24a6ef4ad61010428b1cb725f8f97a633ff82',
     ),
     'getkirby/composer-installer' => 
     array (
@@ -49,17 +49,17 @@
     ),
     'jonataneriksson/kirby-json' => 
     array (
-      'pretty_version' => '1.2.3',
-      'version' => '1.2.3.0',
+      'pretty_version' => '1.3.0',
+      'version' => '1.3.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'da8d0f423ec85d2d3dfd2f34343e4fce0a74c148',
+      'reference' => 'cfc4a562fa3bb8755a458a42908e7aca9d998b4c',
     ),
     'jonataneriksson/vuekit' => 
     array (
-      'pretty_version' => '0.2.3',
-      'version' => '0.2.3.0',
+      'pretty_version' => '0.2.7',
+      'version' => '0.2.7.0',
       'aliases' => 
       array (
       ),
@@ -137,21 +137,21 @@
     ),
     'phpmailer/phpmailer' => 
     array (
-      'pretty_version' => 'v6.2.0',
-      'version' => '6.2.0.0',
+      'pretty_version' => 'v6.4.1',
+      'version' => '6.4.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'e38888a75c070304ca5514197d4847a59a5c853f',
+      'reference' => '9256f12d8fb0cd0500f93b19e18c356906cbed3d',
     ),
     'psr/log' => 
     array (
-      'pretty_version' => '1.1.3',
-      'version' => '1.1.3.0',
+      'pretty_version' => '1.1.4',
+      'version' => '1.1.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
+      'reference' => 'd49695b909c3b7628b6289db5479a1c204601f11',
     ),
     'symfony/polyfill-mbstring' => 
     array (
