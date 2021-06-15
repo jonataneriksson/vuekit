@@ -1,18 +1,29 @@
 import Vue from 'vue';
 import marked from 'marked';
+import axios from 'axios';
 //import yaml from 'yaml-js/lib/yaml.js';
+///Compatibility: js, picture, object-fit
+//import 'picturefill';
+//import 'picturefill/dist/plugins/mutation/pf.mutation.min';
+//import 'core-js/modules/es.promise';
+//import 'core-js/modules/es.array.iterator';
 
 import GlobalEvents from 'vue-global-events';
 Vue.component('GlobalEvents', GlobalEvents);
 
-//import vueVimeoPlayer from 'vue-vimeo-player'
-//Vue.use(vueVimeoPlayer)
-
 export default {
+  data: function(){
+    return {
+      loading: false,
+    }
+  },
   computed: {
     kirby () {
       return this.$store.state.kirby
-    }
+    },
+    submissionID () {
+      return this.$store.state.submissionID
+    },
   },
   methods: {
     urltopath (url) {

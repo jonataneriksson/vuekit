@@ -1,1 +1,3 @@
-sudo scp -r jmwzxsib6b8o@107.180.6.39:/home/jmwzxsib6b8o/www.autumnahn.com/content content
+#!/bin/sh
+. .env
+sudo scp -r $SERVER:$PUBLICHTML/content content

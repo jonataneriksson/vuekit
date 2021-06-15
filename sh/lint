@@ -2,4 +2,3 @@
 eslint assets/components/*.vue --fix
 eslint assets/components/*.js --fix
 eslint assets/views/*.vue --fix
-eslint assets/modules/*.js --fix

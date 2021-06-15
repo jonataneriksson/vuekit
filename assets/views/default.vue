@@ -1,6 +1,6 @@
 <template>
-  <main id='Landing'>
-    <router-view />
+  <main id='Default' v-if='kirby.page.template == "default"'>
+
   </main>
 </template>
 

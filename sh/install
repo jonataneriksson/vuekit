@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo npm install
+sudo npm install --legacy-peer-deps

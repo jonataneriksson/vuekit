@@ -1,16 +1,19 @@
 /* Router */
-const Landing = () => import(/* webpackChunkName: "Vues" */ './views/landing.vue')
+
+import Landing from './views/landing.vue';
+import Cover from './views/cover.vue';
+import Default from './views/default.vue';
 
 export default [
   {
     path: '/',
     component: Landing,
     children: [
-      /* {
+      {
+        name: 'Cover',
         path: '',
-        name: 'Featured',
-        component: Featured
-      }, */
+        component: Cover
+      }
     ]
-  }
+  },
 ]

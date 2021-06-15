@@ -1,0 +1,1 @@
+sudo scp -r site/plugins u46991@164.215.39.201:/home/u46991/tulevaisuudentilannehuone_fi/site/

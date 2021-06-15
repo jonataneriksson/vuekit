@@ -1,0 +1,10 @@
+.k-blocks {
+  background: transparent;
+  box-shadow: none;
+}
+
+.k-block-container {
+  margin-top: 1rem;
+  border-bottom: none;
+  border-radius: 0.5rem;
+}

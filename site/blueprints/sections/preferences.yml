@@ -1,0 +1,6 @@
+type: fields
+fields:
+  alaotsikko:
+      label: Alaotsikko
+      type: hidden
+      width: 1/1

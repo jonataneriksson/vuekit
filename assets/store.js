@@ -6,6 +6,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    submissionID: '',
     kirby: {
       site: [],
       pages: [],
@@ -32,6 +33,9 @@ export default new Vuex.Store({
     }
   },
   mutations: {
+    startSubmission(state, submissionID) {
+      state.submissionID = submissionID;
+    },
     setupKirby(state, data) {
       state.kirby.site = data.site;
       state.kirby.pages = data.pages;

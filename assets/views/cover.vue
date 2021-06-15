@@ -1,12 +1,8 @@
 <template>
-  <main id='Landing'>
-    <router-view />
+  <main id='Intro' v-if='kirby.page.template'>
+    Vuekit
   </main>
 </template>
-
-<style scoped>
-
-</style>
 
 <script>
 import mixins from '.././mixins.js';
@@ -15,3 +11,8 @@ export default {
   mixins: [mixins], //kirby(), urltopath(), etc
 }
 </script>
+
+
+<style scoped>
+
+</style>

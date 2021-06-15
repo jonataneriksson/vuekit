@@ -1,16 +1,10 @@
 Vue.config.devtools = true;
 
-///Compatibility: js, picture, object-fit
-//import 'picturefill';
-//import 'picturefill/dist/plugins/mutation/pf.mutation.min';
-import 'core-js/modules/es.promise';
-import 'core-js/modules/es.array.iterator';
-
 //Vue Setup
 import Vue from 'vue';
 
 //Custom Store for Kirby
-import store from './modules/store.js';
+import store from './store.js';
 
 //Routes on a separate file so this file needs less changes
 import routes from './routes.js';
@@ -22,7 +16,7 @@ import mixins from './mixins.js'
 import components from './components';
 
 //We need the base view for h()
-import App from './views/app.vue';
+import App from './app.vue';
 
 /* Router*/
 import VueRouter from 'vue-router';
@@ -56,7 +50,7 @@ new Vue({
   },
   methods: {
     setupOrUpdateKirby: function() {
-      //window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
       var path = this.$route.path == '/' ? 'home' : this.$route.path;
       if (!this.$store.state.loaded) {
         this.$store.dispatch('loadData', path);

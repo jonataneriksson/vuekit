@@ -1,20 +1,27 @@
 <template>
-  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12' :style='style'>
-    <path d='M11.6,6H0 M8,2.5L11.6,6L8,9.5' />
-    <line x1='14.2'
-          y1='0'
-          x2='14.2'
-          y2='12' />
-  </svg>
+  <div>
+    <svg class='arrow'
+         :style='style'
+         version='1.1'
+         xmlns='http://www.w3.org/2000/svg'
+         x='0px'
+         y='0px'
+         viewBox='0 0 45 35'>
+      <polygon class='arrow' points='26.9,0 25,1.8 39.8,16.1 0,16.1 0,18.9 39.8,18.9 25,33.2 26.9,35 45,17.5 ' />
+    </svg>
+  </div>
 </template>
 
 <style type="text/css">
-	svg {
-    fill:none;
-    stroke:#000000;
-    stroke-width:0.75;
-    height: 1rem;
+  polygon.arrow {
+    fill: #ff5100;
+  }
+
+  svg.arrow {
+    position: relative;
+    bottom: -0.35rem;
     width: 3rem;
+    height: 2.65rem;
   }
 </style>
 
