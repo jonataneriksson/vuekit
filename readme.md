@@ -1,8 +1,6 @@
 # Installation
 
-git clone https://github.com/jonataneriksson/vuekit "project-name" --depth 0
-LOCALPROXY=http://local."project-url"
-VUEHOST=vue."project-url"
+...
 
 # Kirby Kit with Vue and a simple JSON API
 
