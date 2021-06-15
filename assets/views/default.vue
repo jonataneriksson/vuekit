@@ -1,6 +1,6 @@
 <template>
   <main id='Default' v-if='kirby.page.template == "default"'>
-
+    Default
   </main>
 </template>
 
