@@ -5,3 +5,4 @@ columns:
     sections:
       preferences: sections/preferences
       sivut: sections/sivut
+      meta: sections/meta

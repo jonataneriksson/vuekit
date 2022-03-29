@@ -27,6 +27,8 @@
         "php": ">=7.1.0",
         "getkirby/cms": "^3.0",
         "pedroborges/kirby-meta-tags": "*",
+        "omz13/kirby3-xmlsitemap": "^1.2",
+        "omz13/kirby3-wellknown": "^0.2.1",
         "jonataneriksson/kirby-json": "^1.2.0"
     },
     "config": {

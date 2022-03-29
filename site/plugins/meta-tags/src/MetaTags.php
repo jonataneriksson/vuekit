@@ -12,7 +12,7 @@ class MetaTags
 {
     public $tags;
 
-    protected static $instance = null;
+    protected static $instances = [];
 
     protected $indentation;
     protected $order;
@@ -57,7 +57,9 @@ class MetaTags
             $this->data = A::merge($this->data, $templates[$page->template()->name()]);
         }
 
-        static::$instance = $this;
+        $this->addTagsFromTemplate();
+
+        static::$instances[$page->id()] = $this;
     }
 
     /**
@@ -69,15 +71,11 @@ class MetaTags
     */
     public static function instance($page)
     {
-        return static::$instance = is_null(static::$instance)
-            ? new static($page)
-            : static::$instance;
+        return static::$instances[$page->id()] ?? new static($page);
     }
 
     public function render($groups = null)
     {
-        $this->addTagsFromTemplate();
-
         return $this->tags->render($groups);
     }
 

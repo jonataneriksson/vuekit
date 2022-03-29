@@ -6,15 +6,16 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'omz13\\' => array($baseDir . '/site/plugins/kirby3-wellknown/src', $baseDir . '/site/plugins/kirby3-xmlsitemap/src'),
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
-    'TrueBV\\' => array($vendorDir . '/true/punycode/src'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Polyfill\\Intl\\Normalizer\\' => array($vendorDir . '/symfony/polyfill-intl-normalizer'),
+    'Symfony\\Polyfill\\Intl\\Idn\\' => array($vendorDir . '/symfony/polyfill-intl-idn'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
     'PedroBorges\\MetaTags\\' => array($vendorDir . '/pedroborges/meta-tags/src'),
     'PedroBorges\\KirbyMetaTags\\' => array($baseDir . '/site/plugins/meta-tags/src'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
-    'Laminas\\ZendFrameworkBridge\\' => array($vendorDir . '/laminas/laminas-zendframework-bridge/src'),
     'Laminas\\Escaper\\' => array($vendorDir . '/laminas/laminas-escaper/src'),
-    'Kirby\\' => array($vendorDir . '/getkirby/composer-installer/src', $baseDir . '/kirby/src'),
+    'Kirby\\' => array($baseDir . '/kirby/src', $vendorDir . '/getkirby/composer-installer/src'),
     '' => array($vendorDir . '/league/color-extractor/src'),
 );

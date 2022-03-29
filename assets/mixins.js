@@ -2,7 +2,7 @@ import Vue from 'vue';
 //import marked from 'marked';
 import axios from 'axios';
 import dateFormat, { masks } from 'dateformat';
-import yaml from 'yaml-js/lib/yaml.js';
+import yaml from 'js-yaml';
 ///Compatibility: js, picture, object-fit
 //import 'picturefill';
 //import 'picturefill/dist/plugins/mutation/pf.mutation.min';

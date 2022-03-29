@@ -1,0 +1,19 @@
+type: fields
+fields:
+  cover:
+    label: Featured Image
+    type: files
+    query: site.index.images
+    image:
+      cover: true
+    cover: true
+    layout: cards
+    size: tiny
+    width: 1/4
+    multiple: false
+  introduction:
+    label: Introduction
+    type: textarea
+    buttons: false
+    size: small
+    width: 3/4
