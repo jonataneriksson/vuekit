@@ -1,0 +1,3 @@
+#!/bin/sh
+. .env
+git push $REMOTE $BRANCH

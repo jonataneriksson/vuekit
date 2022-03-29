@@ -1,3 +1,4 @@
 #!/bin/sh
 . .env
-sudo rsync -av $SERVER:$PUBLICHTML/content/. content/.
+#sudo rsync -av $SERVER:$PUBLICHTML/content/. content/.
+scp -r $SERVER:$PUBLICHTML/content  .

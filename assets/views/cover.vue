@@ -1,6 +1,6 @@
 <template>
   <main id='Intro' v-if='kirby.page.template'>
-    Vuekit
+    Vuekit is here
   </main>
 </template>
 

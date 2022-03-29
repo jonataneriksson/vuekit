@@ -1,14 +1,14 @@
 #!/bin/sh
-sudo find content -exec chown :_www {} +
+sudo find content -exec chown :www-data {} +
 sudo find content -type d -exec chmod 775 {} +
 sudo find content -type f -exec chmod 666 {} +
-sudo find media -exec chown :_www {} +
+sudo find media -exec chown :www-data {} +
 sudo find media -type d -exec chmod 775 {} +
 sudo find media -type f -exec chmod 666 {} +
-sudo find site -exec chown :_www {} +
+sudo find site -exec chown :www-data {} +
 sudo find site -type d -exec chmod 775 {} +
 sudo find site -type f -exec chmod 666 {} +
-sudo find assets/icons -exec chown :_www {} +
+sudo find assets/icons -exec chown :www-data {} +
 sudo find assets/icons -type d -exec chmod 775 {} +
 sudo find assets/icons -type f -exec chmod 666 {} +
 sudo find sh -exec chmod 775 {} +
