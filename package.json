@@ -18,7 +18,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "dateformat": "^5.0.2",
-    "marked": "^0.8.2",
+    "marked": "^4.0.10",
     "yaml-js": "^0.2.3"
   },
   "devDependencies": {
